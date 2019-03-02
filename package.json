@@ -1,0 +1,37 @@
+{
+  "name": "promotime",
+  "version": "0.0.0",
+  "bin": "build/src/index.js",
+  "description": "Well, it's perf season.  Run this to get your GitHub stats over a given period of time.",
+  "main": "build/src/index.js",
+  "scripts": {
+    "test": "nyc mocha build/test",
+    "check": "gts check",
+    "clean": "gts clean",
+    "compile": "tsc -p .",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "posttest": "npm run check",
+    "watch": "tsc -p . --watch"
+  },
+  "keywords": [],
+  "author": "Justin Beckwith",
+  "license": "MIT",
+  "dependencies": {
+    "@google-cloud/bigquery": "^2.0.6",
+    "chalk": "^2.4.2",
+    "meow": "^5.0.0",
+    "update-notifier": "^2.5.0"
+  },
+  "devDependencies": {
+    "@types/meow": "^5.0.0",
+    "@types/mocha": "^5.2.6",
+    "@types/update-notifier": "^2.5.0",
+    "codecov": "^3.2.0",
+    "gts": "^1.0.0-0",
+    "mocha": "^6.0.2",
+    "nyc": "^13.3.0",
+    "typescript": "~3.3.0"
+  }
+}
