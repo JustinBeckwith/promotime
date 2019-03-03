@@ -22,6 +22,15 @@ $ npm install -g promotime
 $ promotime JustinBeckwith --start 2018-03-01 --end 2019-03-01
 ```
 
+## Sample Output
+
+```sh
+SELECT * FROM `githubarchive.month.*` WHERE actor.login='JustinBeckwith' AND created_at > '2018-03-01' AND created_at < '2019-03-01'
+{ pullRequestsCreated: 2389,
+  pullRequestCommentsMade: 1026,
+  issuesClosed: 2833 }
+```
+
 ## Authentication
 For now, this uses the Google Cloud SDK for authentication. I know, that's lame.  If anyone wants, I can add the code to do OAuth2 based auth.
 - Make sure you have the [Cloud SDK](https://cloud.google.com/sdk) installed.
