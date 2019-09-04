@@ -3,19 +3,20 @@
   "version": "0.0.0",
   "bin": "build/src/index.js",
   "description": "Well, it's perf season.  Run this to get your GitHub stats over a given period of time.",
-  "files": ["build/src"],
+  "files": [
+    "build/src"
+  ],
   "main": "build/src/index.js",
   "types": "build/src/index.d.ts",
   "scripts": {
-    "test": "nyc mocha build/test",
+    "test": "c8 mocha build/test",
     "lint": "gts check",
     "compile": "tsc -p .",
     "fix": "gts fix",
     "prepare": "npm run compile",
     "pretest": "npm run compile",
     "watch": "tsc -p . --watch",
-    "codecov": "nyc report --reporter=json && codecov -f coverage/*.json",
-    "commitlint": "git log -1 --pretty=%B | commitlint"
+    "codecov": "c8 report --reporter=json && codecov -f coverage/*.json"
   },
   "keywords": [
     "promotion",
@@ -31,15 +32,13 @@
     "update-notifier": "^3.0.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^7.5.2",
-    "@commitlint/config-conventional": "^7.5.0",
     "@types/meow": "^5.0.0",
     "@types/mocha": "^5.2.6",
     "@types/update-notifier": "^2.5.0",
+    "c8": "^5.0.1",
     "codecov": "^3.2.0",
     "gts": "^1.0.0-0",
     "mocha": "^6.0.2",
-    "nyc": "^13.3.0",
     "semantic-release": "^15.13.3",
     "typescript": "~3.5.0"
   }
