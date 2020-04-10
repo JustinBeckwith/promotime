@@ -1,10 +1,11 @@
 #!/usr/bin/env node
-import { BigQuery } from '@google-cloud/bigquery';
+import {BigQuery} from '@google-cloud/bigquery';
 import * as meow from 'meow';
 import * as updateNotifier from 'update-notifier';
 
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const pkg = require('../../package.json');
-updateNotifier({ pkg }).notify();
+updateNotifier({pkg}).notify();
 const cli = meow(
   `
   Usage
@@ -31,8 +32,8 @@ const cli = meow(
 `,
   {
     flags: {
-      start: { type: 'string' },
-      end: { type: 'string' },
+      start: {type: 'string'},
+      end: {type: 'string'},
     },
   }
 );
