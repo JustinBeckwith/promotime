@@ -32,7 +32,7 @@ SELECT * FROM `githubarchive.month.*` WHERE actor.login='JustinBeckwith' AND cre
 ```
 
 ## Authentication
-For now, this uses the Google Cloud SDK for authentication. I know, that's lame.  If anyone wants, I can add the code to do OAuth2 based auth.
+For now, this uses the Google Cloud SDK for authentication. I know, that's less than ideal.  If anyone wants, I can add the code to do OAuth2 based auth.
 - Make sure you have the [Cloud SDK](https://cloud.google.com/sdk) installed.
 - `$ gcloud auth login`
 - `$ gcloud auth application-default login`
