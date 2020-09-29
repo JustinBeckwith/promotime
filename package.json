@@ -32,7 +32,7 @@
     "@google-cloud/bigquery": "^5.0.0",
     "chalk": "^4.0.0",
     "meow": "^7.0.0",
-    "update-notifier": "^4.0.0"
+    "update-notifier": "^5.0.0"
   },
   "devDependencies": {
     "@types/meow": "^5.0.0",
