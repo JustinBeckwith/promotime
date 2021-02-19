@@ -2,8 +2,8 @@
 > A tool for gathering GitHub stats!
 
 [![npm version](https://img.shields.io/npm/v/promotime.svg)](https://www.npmjs.org/package/promotime)
-[![Build Status](https://api.cirrus-ci.com/github/JustinBeckwith/promotime.svg)](https://cirrus-ci.com/github/JustinBeckwith/promotime)
-[![codecov](https://codecov.io/gh/JustinBeckwith/promotime/branch/master/graph/badge.svg)](https://codecov.io/gh/JustinBeckwith/promotime)
+[![Build Status](https://img.shields.io/github/workflow/status/JustinBeckwith/promotime/ci/main)](https://github.com/JustinBeckwith/promotime/actions?query=branch%3Amain+workflow%3Aci)
+[![codecov](https://codecov.io/gh/JustinBeckwith/promotime/branch/main/graph/badge.svg)](https://codecov.io/gh/JustinBeckwith/promotime)
 [![Dependency Status](https://img.shields.io/david/JustinBeckwith/promotime.svg)](https://david-dm.org/JustinBeckwith/promotime)
 [![Known Vulnerabilities](https://snyk.io/test/github/JustinBeckwith/promotime/badge.svg)](https://snyk.io/test/github/JustinBeckwith/promotime)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
