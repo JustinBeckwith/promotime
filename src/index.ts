@@ -1,11 +1,15 @@
 #!/usr/bin/env node
 import {BigQuery} from '@google-cloud/bigquery';
-import * as meow from 'meow';
-import * as updateNotifier from 'update-notifier';
+import meow from 'meow';
+import updateNotifier from 'update-notifier';
+import fs from 'fs';
+import {URL} from 'url';
 
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const pkg = require('../../package.json');
+const pkg = JSON.parse(
+  fs.readFileSync(new URL('../../package.json', import.meta.url), 'utf-8')
+);
 updateNotifier({pkg}).notify();
+
 const cli = meow(
   `
   Usage
@@ -31,6 +35,7 @@ const cli = meow(
     $ promotime JustinBeckwith --start 2011-01-01 --end 2019-03-01
 `,
   {
+    importMeta: import.meta,
     flags: {
       start: {type: 'string'},
       end: {type: 'string'},

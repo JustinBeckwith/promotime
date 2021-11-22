@@ -8,9 +8,10 @@
     "build/src"
   ],
   "engines": {
-    "node": ">=10"
+    "node": ">=12"
   },
-  "main": "build/src/index.js",
+  "type": "module",
+  "exports": "./build/src/index.js",
   "types": "build/src/index.d.ts",
   "scripts": {
     "test": "c8 mocha build/test",
@@ -29,20 +30,20 @@
   "author": "Justin Beckwith",
   "license": "MIT",
   "dependencies": {
-    "@google-cloud/bigquery": "^5.0.0",
-    "chalk": "^4.0.0",
-    "meow": "^9.0.0",
-    "update-notifier": "^5.0.0"
+    "@google-cloud/bigquery": "^5.9.2",
+    "chalk": "^4.1.2",
+    "meow": "^10.1.2",
+    "update-notifier": "^5.1.0"
   },
   "devDependencies": {
     "@types/meow": "^5.0.0",
-    "@types/mocha": "^8.0.0",
-    "@types/node": "^14.14.31",
-    "@types/update-notifier": "^5.0.0",
-    "c8": "^7.0.0",
-    "gts": "^3.0.0",
-    "mocha": "^8.0.0",
-    "semantic-release": "^17.0.0",
-    "typescript": "~4.3.0"
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.11.9",
+    "@types/update-notifier": "^5.1.0",
+    "c8": "^7.10.0",
+    "gts": "^3.1.0",
+    "mocha": "^9.1.3",
+    "semantic-release": "^18.0.0",
+    "typescript": "~4.5.2"
   }
 }
