@@ -22,7 +22,7 @@ jobs:
       - run: node --version
       - run: npm ci
       - run: npm test
-      - uses: codecov/codecov-action@v2
+      - uses: codecov/codecov-action@v3
         if: matrix.node == 16
   lint:
     runs-on: ubuntu-latest
