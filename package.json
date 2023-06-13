@@ -8,7 +8,7 @@
     "build/src"
   ],
   "engines": {
-    "node": ">=12"
+    "node": ">=18"
   },
   "type": "module",
   "exports": "./build/src/index.js",
