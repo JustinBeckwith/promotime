@@ -40,7 +40,7 @@
     "@types/mocha": "^10.0.0",
     "@types/node": "^18.0.0",
     "@types/update-notifier": "^6.0.0",
-    "c8": "^7.10.0",
+    "c8": "^8.0.0",
     "gts": "^4.0.0",
     "mocha": "^10.0.0",
     "semantic-release": "^20.0.0",
