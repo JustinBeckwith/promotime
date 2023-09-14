@@ -30,7 +30,7 @@
   "author": "Justin Beckwith",
   "license": "MIT",
   "dependencies": {
-    "@google-cloud/bigquery": "^6.0.0",
+    "@google-cloud/bigquery": "^7.0.0",
     "chalk": "^5.0.0",
     "meow": "^12.0.0",
     "update-notifier": "^6.0.0"
