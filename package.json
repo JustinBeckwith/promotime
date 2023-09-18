@@ -15,6 +15,7 @@
   "types": "build/src/index.d.ts",
   "scripts": {
     "test": "c8 mocha build/test",
+    "coverage": "c8 report --reporter=json",
     "lint": "xo --prettier",
     "compile": "tsc -p .",
     "fix": "xo --prettier --fix",
