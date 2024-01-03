@@ -33,11 +33,10 @@
   "dependencies": {
     "@google-cloud/bigquery": "^7.0.0",
     "chalk": "^5.0.0",
-    "meow": "^12.0.0",
+    "meow": "^13.0.0",
     "update-notifier": "^7.0.0"
   },
   "devDependencies": {
-    "@types/meow": "^5.0.0",
     "@types/mocha": "^10.0.0",
     "@types/node": "^20.0.0",
     "@types/update-notifier": "^6.0.0",
