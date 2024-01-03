@@ -3,9 +3,8 @@
     "strict": true,
     "target": "ES2022",
     "outDir": "build",
-    "allowSyntheticDefaultImports": true,
-    "module": "ES2022",
-    "moduleResolution": "node"
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext"
   },
   "include": [
     "src/*.ts",

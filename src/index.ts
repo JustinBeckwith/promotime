@@ -9,38 +9,38 @@ const pkg = JSON.parse(
 ) as Package;
 updateNotifier({pkg}).notify();
 
-const cli = meow(
-	`
-  Usage
-    $ promotime GITHUB_USERNAME [--arguments]
+const helpMessage = `
+Usage
+	$ promotime GITHUB_USERNAME [--arguments]
 
-  Positional arguments
+Positional arguments
 
-    GITHUB_USERNAME
-      The GitHub Username of the account to run a report on.
+	GITHUB_USERNAME
+		The GitHub Username of the account to run a report on.
 
-  Flags
+Flags
 
-    --start=START_DATE
-        The start date in 'YYYY-MM-DDDD' format.
+	--start=START_DATE
+			The start date in 'YYYY-MM-DDDD' format.
 
-    --end=END_DATE
-        The end date in 'YYYY-MM-DDDD' format.
+	--end=END_DATE
+			The end date in 'YYYY-MM-DDDD' format.
 
-    --help
-        Show this command.
+	--help
+			Show this command.
 
-  Examples
-    $ promotime JustinBeckwith --start 2011-01-01 --end 2019-03-01
-`,
-	{
-		importMeta: import.meta,
-		flags: {
-			start: {type: 'string'},
-			end: {type: 'string'},
-		},
+Examples
+	$ promotime JustinBeckwith --start 2011-01-01 --end 2019-03-01
+`;
+
+const cli = meow({
+	importMeta: import.meta,
+	help: helpMessage,
+	flags: {
+		start: {type: 'string'},
+		end: {type: 'string'},
 	},
-);
+});
 
 type Results = {
 	pullRequestsCreated?: number;
