@@ -4,10 +4,10 @@ import {BigQuery} from '@google-cloud/bigquery';
 import meow from 'meow';
 import updateNotifier, {type Package} from 'update-notifier';
 
-const pkg = JSON.parse(
+const package_ = JSON.parse(
 	fs.readFileSync(new URL('../../package.json', import.meta.url), 'utf8'),
 ) as Package;
-updateNotifier({pkg}).notify();
+updateNotifier({pkg: package_}).notify();
 
 const helpMessage = `
 Usage
