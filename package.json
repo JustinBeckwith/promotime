@@ -43,7 +43,7 @@
     "c8": "^10.0.0",
     "mocha": "^11.0.0",
     "semantic-release": "^24.0.0",
-    "typescript": "~5.7.0",
+    "typescript": "~5.8.0",
     "xo": "^1.0.0"
   }
 }
