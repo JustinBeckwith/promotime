@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - uses: JustinBeckwith/linkinator-action@v1
+      - uses: JustinBeckwith/linkinator-action@v2
   test:
     runs-on: ubuntu-latest
     strategy:
@@ -34,18 +34,3 @@ jobs:
           node-version: 22
       - run: npm ci
       - run: npm run lint
-  release:
-    if: github.ref == 'refs/heads/main'
-    runs-on: ubuntu-latest
-    needs: [test, lint]
-    steps:
-      - uses: actions/checkout@v5
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-      - run: npm ci
-      - run: npm run compile
-      - run: npx semantic-release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
