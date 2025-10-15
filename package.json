@@ -1,6 +1,6 @@
 {
   "name": "promotime",
-  "version": "3.0.3",
+  "version": "4.0.0",
   "bin": "build/src/index.js",
   "description": "Well, it's perf season.  Run this to get your GitHub stats over a given period of time.",
   "repository": "JustinBeckwith/promotime",
