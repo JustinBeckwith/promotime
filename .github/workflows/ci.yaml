@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node: [18, 20]
+        node: [20, 22, 24]
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v6
@@ -24,13 +24,13 @@ jobs:
       - run: npm test
       - run: npm run coverage
       - uses: codecov/codecov-action@v5
-        if: matrix.node == 18
+        if: matrix.node == 24
   lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v6
         with:
-          node-version: 22
+          node-version: 24
       - run: npm ci
       - run: npm run lint
