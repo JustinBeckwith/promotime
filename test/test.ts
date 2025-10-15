@@ -2,9 +2,9 @@ import assert from 'node:assert';
 import { afterEach, beforeEach, describe, it } from 'mocha';
 import {
   buildQuery,
-  processResults,
   helpMessage,
   main,
+  processResults,
   type QueryResult,
   type Results,
 } from '../src/index.js';
