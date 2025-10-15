@@ -1,6 +1,6 @@
 {
   "name": "promotime",
-  "version": "0.0.0",
+  "version": "3.0.3",
   "bin": "build/src/index.js",
   "description": "Well, it's perf season.  Run this to get your GitHub stats over a given period of time.",
   "repository": "JustinBeckwith/promotime",
@@ -16,9 +16,9 @@
   "scripts": {
     "test": "c8 mocha build/test",
     "coverage": "c8 report --reporter=json",
-    "lint": "xo --prettier",
+    "lint": "biome check .",
     "compile": "tsc -p .",
-    "fix": "xo --prettier --fix",
+    "fix": "biome check --write .",
     "prepare": "npm run compile",
     "pretest": "npm run compile",
     "watch": "tsc -p . --watch"
@@ -37,13 +37,12 @@
     "update-notifier": "^7.0.0"
   },
   "devDependencies": {
+    "@biomejs/biome": "^2.2.6",
     "@types/mocha": "^10.0.0",
     "@types/node": "^22.0.0",
     "@types/update-notifier": "^6.0.0",
     "c8": "^10.0.0",
     "mocha": "^11.0.0",
-    "semantic-release": "^24.0.0",
-    "typescript": "~5.9.0",
-    "xo": "^1.0.0"
+    "typescript": "~5.9.0"
   }
 }
