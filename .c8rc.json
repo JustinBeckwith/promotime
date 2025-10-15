@@ -1,0 +1,12 @@
+{
+  "all": true,
+  "include": ["build/src/**/*.js"],
+  "exclude": ["build/test/**"],
+  "excludeAfterRemap": false,
+  "reporter": ["text", "html", "lcov"],
+  "check-coverage": true,
+  "lines": 95,
+  "functions": 95,
+  "branches": 95,
+  "statements": 95
+}
