@@ -1,6 +1,6 @@
 # Changelog
 
-## [4.0.0](https://github.com/JustinBeckwith/promotime/compare/promotime-v3.0.3...promotime-v4.0.0) (2025-10-15)
+## [4.0.0](https://github.com/JustinBeckwith/promotime/compare/v3.0.3...promotime-v4.0.0) (2025-10-15)
 
 
 ### ⚠ BREAKING CHANGES
