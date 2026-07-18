@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "strict": true,
+    "skipLibCheck": true,
     "target": "ES2022",
     "outDir": "build",
     "module": "NodeNext",
