@@ -1,5 +1,13 @@
 # Changelog
 
+## [4.0.1](https://github.com/JustinBeckwith/promotime/compare/promotime-v4.0.0...promotime-v4.0.1) (2026-09-14)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @google-cloud/bigquery to v9 ([#216](https://github.com/JustinBeckwith/promotime/issues/216)) ([4dd5fa6](https://github.com/JustinBeckwith/promotime/commit/4dd5fa6b3783fa8fabababbac4c885f2bae243a0))
+* **deps:** update dependency chalk to v6 ([#214](https://github.com/JustinBeckwith/promotime/issues/214)) ([87791b6](https://github.com/JustinBeckwith/promotime/commit/87791b6ef5bbffd2e8d1dedf2b677310918e5568))
+
 ## [4.0.0](https://github.com/JustinBeckwith/promotime/compare/v3.0.3...promotime-v4.0.0) (2025-10-15)
 
 
